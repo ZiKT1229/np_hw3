@@ -5,3 +5,5 @@
 另外，command line當中可以設定過濾條件(BPF 語法的條件)，使你的讀取程式只會顯示滿足條件的封包。
 
 ps. pcap檔的範例可在https://wiki.wireshark.org/SampleCaptures 下載。
+
+參考: https://stackoverflow.com/questions/13503224/getting-wrong-ip-and-port-number-from-libpcap-captured-packet

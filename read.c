@@ -37,15 +37,8 @@ int main(int argc, char *argv[])
         tcp = (struct tcphdr*)(data+sizeof(struct ether_header)+sizeof(struct ip));
         char* src = inet_ntoa(ip->ip_src);
         char* dst = inet_ntoa(ip->ip_dst);
-        printf("src %s:%d\n",src,ntohs(tcp->source));
+        printf("src %s:%d\n", src, ntohs(tcp->source));
         printf("des %s:%d\n", dst, ntohs(tcp->dest));
-        /*for (u_int i=0; (i < header->caplen ) ; i++)
-        {
-            if ( (i % 16) == 0) printf("\n");
-
-            printf("%.2x ", data[i]);
-        }*/
-
         printf("\n\n");
     }
     return 0;
